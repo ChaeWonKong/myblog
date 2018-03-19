@@ -1,10 +1,12 @@
 {% load static %}
+{% load markdownify %}
+
 <html>
     <head>
     	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/highlight/styles/github.css' %}">
+        <link rel="stylesheet" href="{% static 'css/highlight/styles/solarized-dark.css' %}">
         <script src="{% static 'css/highlight/highlight.pack.js' %}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <title>Dalbits Coding's Blog</title>
