@@ -31,13 +31,15 @@ div.menu h1, div.menu h1 a {
 	text-decoration: none;
 }
 
-span.menu{float: right;}
+span.menu{
+	float: right;
+}
 
 a.write {
 	float: left; 
 	color: #4e57ac;
-	margin-top: 5px;
-	margin-right: 15px;
+	margin-top: 0;
+	margin-right: 30px;
 	font-size: 14pt;
 	font-weight: bold;
 }
@@ -105,4 +107,3 @@ span.about {
 	line-height: 1.5;
 	letter-spacing: 0.5pt;
 }
-
