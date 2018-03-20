@@ -31,10 +31,15 @@ div.menu h1, div.menu h1 a {
 	text-decoration: none;
 }
 
+span.menu{float: right;}
+
 a.write {
-	float: right; 
+	float: left; 
 	color: #4e57ac;
 	margin-top: 5px;
+	margin-right: 15px;
+	font-size: 14pt;
+	font-weight: bold;
 }
 
 div.content-container {
@@ -84,5 +89,20 @@ button.save {
 pre > code {
 	font-size: 11pt;
 	font-family: monospace;
+}
+
+
+/*Menu*/
+td.about {
+	vertical-align: bottom;
+	width: 775px;
+	padding-left: 40px;
+}
+
+span.about {
+
+	font-size: 12pt;
+	line-height: 1.5;
+	letter-spacing: 0.5pt;
 }
 

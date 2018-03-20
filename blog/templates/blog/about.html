@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class='about'>
+	<table>
+		<tr>
+			<td>
+				<img src="{% static 'css/images/portrait.jpg' %}" height="400px" />
+			</td>
+			<td class="about">
+				<span class="about">
+					<h2>Dalbits</h2>
+					Name: Kong Chae Won<br>
+					Origin: South Korea<br>
+					E-mail: chaewonkong@gmail.com<br><br>
+
+					안녕하세요. 달빛입니다. 파이썬을 공부하며, 웹 스크레이핑에 관심이 많습니다. 코딩을 통해 일상의 사소한 문제들을 해결해 나가는 것에 큰 흥미를 느낍니다. 코딩을 하며 수많은 오픈소스들의 도움을 받았고, 스택오버플로우와 구글의 도움을 받아 왔습니다. 도움을 받은 만큼 조금이나마 개발자 커뮤니티에 기여하고 싶기에, 이렇게 블로그를 시작합니다.<br><br>
+
+					글쓰기를 좋아하고, 읽는 것도 좋아합니다. 블로그를 통해 공부한 내용을 정리하고, 프로젝트를 공개하며, 생각을 공유하고자 합니다. 달빛의 블로그 잘 부탁드립니다.
+				</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+{% endblock %}
