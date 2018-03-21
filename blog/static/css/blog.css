@@ -133,3 +133,20 @@ div.edit > a {
 
 a.delete { color: #bc0f0f; }
 a.delete:hover {color: #ff0000;}
+
+/*Paginations*/
+span.pagination {
+	margin: 0 auto;
+	display: table;
+}
+
+li {
+	display: inline;
+	margin: 0 5px 0 5px;
+}
+
+span.page_num {
+	display: inline; 
+	font-weight: 800;
+	color: #4e57ac;
+}
