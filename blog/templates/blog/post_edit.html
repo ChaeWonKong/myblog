@@ -3,12 +3,7 @@
 {% block content %}
 	<h1>New Post</h1>
 	<form method="POST" class="post-form">{% csrf_token %}
-		<select>
-			<option value="coding">coding</option>
-			<option value="projects">projects</option>
-			<option value="essays">essays</option>
-		</select>
-		{{ form.as_p }}
+		{{ form|linebreaksbr }}
 		<button type="submit" class="save">Save</button>
 	</form>
 {% endblock %}

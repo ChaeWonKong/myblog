@@ -11,7 +11,7 @@ def post_list(request):
 	page_list = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
 	page = request.GET.get('page', 1)
 	
-	paginator = Paginator(page_list, 1)
+	paginator = Paginator(page_list, 5)
 	try:
 		posts = paginator.page(page)
 	except PageNotAnInteger:
@@ -53,7 +53,7 @@ def post_edit(request, pk):
 	post = get_object_or_404(Post, pk=pk)
 
 	if request.method == "POST":
-		form = PostForm(request.POST, instance =post)
+		form = PostForm(request.POST, instance=post)
 
 		if form.is_valid():
 			post = form.save(commit=False)
@@ -78,3 +78,19 @@ def post_remove(request, pk):
 
 def about(request):
 	return render(request, 'blog/about.html')
+
+
+def category_list(request, category):
+
+	page_list = Post.objects.filter(category=category, created_date__lte=timezone.now()).order_by('-created_date')
+	page = request.GET.get('page', 1)
+	
+	paginator = Paginator(page_list, 5)
+	try:
+		posts = paginator.page(page)
+	except PageNotAnInteger:
+		posts = paginator.page(1)
+	except EmptyPage:
+		posts = paginator.page(paginator.num_pages)
+	
+	return render(request, 'blog/category_list.html', { 'posts': posts })

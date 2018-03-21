@@ -19,9 +19,9 @@
             <h1><a href="/">Dalbits Coding's Blog</a></h1>
             <div class="category">
                 <a class="write" href="{% url 'about' %}">about</a>
-                <a class="write" href="#">computer science</a>
-                <a class="write" href="#">projects</a>
-                <a class="write" href="#">essays</a>
+                <a class="write" href="{% url 'category_list' category='cs' %}">computer science</a>
+                <a class="write" href="{% url 'category_list' category='pj' %}">projects</a>
+                <a class="write" href="{% url 'category_list' category='es' %}">essays</a>
                 {% if user.is_authenticated %}
                 <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" width="15px" /></a>
                 {% endif %}

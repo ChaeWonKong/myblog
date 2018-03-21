@@ -3,9 +3,16 @@ from django.utils import timezone
 
 
 class Post(models.Model):
+	CATEGORY = (
+			('cs', 'Computer Science'),
+			('pj', 'Projects'),
+			('es', 'Essays')
+		)
+
 	author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
 	title = models.CharField(max_length=200)
 	text = models.TextField()
+	category = models.CharField(max_length=5, choices=CATEGORY)
 	created_date = models.DateTimeField(blank=True, null=True)
 
 
