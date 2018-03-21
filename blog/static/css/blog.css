@@ -31,12 +31,22 @@ div.menu h1, div.menu h1 a {
 	text-decoration: none;
 }
 
-span.menu{
-	float: right;
+div.menu > a {
 }
 
+div.category {
+	height: 30px;
+	display: inline;
+	float: right;
+	margin-top: 5px;
+}
+
+img.plus {
+	vertical-align: middle;
+}
+
+
 a.write {
-	float: left; 
 	color: #4e57ac;
 	margin-top: 0;
 	margin-right: 30px;
@@ -54,7 +64,7 @@ div.post {
 
 a {text-decoration: none;}
 a:link, a:visited { color: #4e57ac; }
-a:hover{ color: #4e80ac;}
+a:hover{ color: #72ace0}
 
 div.col-md-8 {
 	width: 1000px;
@@ -88,7 +98,7 @@ button.save {
 	font-size: 14pt;
 }
 
-pre > code {
+code {
 	font-size: 11pt;
 	font-family: monospace;
 }
@@ -107,3 +117,19 @@ span.about {
 	line-height: 1.5;
 	letter-spacing: 0.5pt;
 }
+
+h1.detail {
+	display: inline;
+}
+
+div.edit {
+	height: 40px;
+	float: right;
+}
+
+div.edit > a {
+	margin-left: 10px;
+}
+
+a.delete { color: #bc0f0f; }
+a.delete:hover {color: #ff0000;}

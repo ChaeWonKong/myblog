@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 {% load markdownify %}
+{% load static %}
 
 {% block content %}
 	<div class="post">
@@ -9,10 +10,13 @@
 			</div>
 		{% endif %}
 		
-		<h1>{{ post.title }}</h1>
-		{% if user.is_authenticated %}
-		<a href="{% url 'post_edit' pk=post.pk %}">edit</a>
-		{% endif %}
+		<h1 class="detail">{{ post.title }}</h1>
+		<div class="edit">
+			{% if user.is_authenticated %}
+			<a href="{% url 'post_edit' pk=post.pk %}">edit</a>
+			<a class="delete" href="{% url 'post_list' %}">delete</a>
+			{% endif %}
+		</div>
 		<div class="content">
 			{{ post.text|markdown|safe }}
 		</div>
