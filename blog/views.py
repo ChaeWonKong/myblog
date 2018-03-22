@@ -8,7 +8,8 @@ from .models import Post
 
 
 def post_list(request):
-	page_list = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
+	page_list = \
+		Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
 	page = request.GET.get('page', 1)
 	
 	paginator = Paginator(page_list, 5)
@@ -82,7 +83,9 @@ def about(request):
 
 def category_list(request, category):
 
-	page_list = Post.objects.filter(category=category, created_date__lte=timezone.now()).order_by('-created_date')
+	page_list = \
+		Post.objects.filter(category=category, \
+				created_date__lte=timezone.now()).order_by('-created_date')
 	page = request.GET.get('page', 1)
 	
 	paginator = Paginator(page_list, 5)
@@ -94,3 +97,13 @@ def category_list(request, category):
 		posts = paginator.page(paginator.num_pages)
 	
 	return render(request, 'blog/category_list.html', { 'posts': posts })
+
+
+def like_action(request, pk):
+	"""Like action: add +1 to post.like"""
+
+	post = get_object_or_404(Post, pk=pk)
+	post.like = post.like + 1
+	post.save()
+
+	return redirect('post_detail', pk=post.pk)

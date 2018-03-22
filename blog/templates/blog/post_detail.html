@@ -20,5 +20,11 @@
 		<div class="content">
 			{{ post.text|markdown|safe }}
 		</div>
+		<div class="interaction">
+			<p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
+					{{ post.like }}
+			</p>
+			<a href="{% url 'like_action' pk=post.pk %}" style="font-weight: bold; font-family: sans-serif;">Like</a>
+		</div>
 	</div>
 {% endblock %}

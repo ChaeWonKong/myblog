@@ -14,6 +14,7 @@ class Post(models.Model):
 	text = models.TextField()
 	category = models.CharField(max_length=5, choices=CATEGORY)
 	created_date = models.DateTimeField(blank=True, null=True)
+	like = models.IntegerField(default=0)
 
 
 	def publish(self):
