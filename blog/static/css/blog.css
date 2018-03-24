@@ -1,140 +1,56 @@
-body {font-family: sans-serif;}
+@charset "UTF-8";
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0 20px 0 20px;
+	font-size: 2vw;
+	letter-spacing: 0.1vw;
+	line-height: 1.5;
+}
 
 div.page-header {
 	background-color: #fff;
 	width: 100%;
 	height: 50px;
-	padding: 0px 5px 5px 10px;
 	position: fixed;
 }
-
-hr { border: 0.5px solid #e8e8e8 }
-
-body{
-	margin: 0;
-}
-
 
 div.menu {
 	width: 95%;
 	margin-top: 10px;
-}
-
-h1 {
-	display: inline;
-	letter-spacing: 1pt;
-}
-
-div.menu h1, div.menu h1 a {
-	color: #4e57ac;
-	font-size: 20pt;
-	text-decoration: none;
-}
-
-div.menu > a {
-}
-
-div.category {
-	height: 30px;
-	display: inline;
-	float: right;
-	margin-top: 5px;
-}
-
-img.plus {
-	vertical-align: middle;
-}
-
-
-a.write {
-	color: #4e57ac;
-	margin-top: 0;
-	margin-right: 30px;
-	font-size: 14pt;
-	font-weight: bold;
-}
-
-div.content-container {
-	width: 100%
-}
-
-div.post {
-	margin: 100px 0;
+	background-color: #fff;
 }
 
 a {text-decoration: none;}
 a:link, a:visited { color: #4e57ac; }
 a:hover{ color: #72ace0}
 
-div.col-md-8 {
-	width: 1000px;
-	margin:70px auto 70px auto;
+div.menu h1 { font-size: 7vw; }
+h1 { font-size: 5vw; }
+
+img.plus {
+	vertical-align: middle;
+	width: 2vw;
 }
 
-div.content {
-	letter-spacing: 0.5pt;
-	line-height: 1.5;
-}
 
-form.post-form input {
-	width: 1000px;
+/* list view */
+img.delete { width: 2vw }
+
+div.edit {
 	height: 40px;
-	font-size: 14pt;
-	letter-spacing: 1pt;
-}
-
-textarea {
-	width: 1000px;
-	height: 500px;
-	font-size: 11pt;
-	line-height: 1.5;
-	letter-spacing: 0.5pt;
-}
-
-button.save {
 	float: right;
-	font-family: 'helvetica-neue';
-	letter-spacing: 1pt;
-	font-size: 14pt;
-}
-
-code {
-	font-size: 11pt;
-	font-family: monospace;
-}
-
-
-/*Menu*/
-td.about {
-	vertical-align: bottom;
-	width: 775px;
-	padding-left: 40px;
-}
-
-span.about {
-
-	font-size: 12pt;
-	line-height: 1.5;
-	letter-spacing: 0.5pt;
+	margin-right: 30px;
 }
 
 h1.detail {
 	display: inline;
 }
 
-div.edit {
-	height: 40px;
-	float: right;
-}
 
-div.edit > a {
-	margin-left: 10px;
-}
 
-a.delete { color: #bc0f0f; }
-a.delete:hover {color: #ff0000;}
-
-/*Paginations*/
+/* Paginations */
 span.pagination {
 	margin: 0 auto;
 	display: table;
@@ -149,4 +65,176 @@ span.page_num {
 	display: inline; 
 	font-weight: 800;
 	color: #4e57ac;
+}
+
+
+/* Minimum width 860px */
+@media (min-width: 860px){
+
+	/* Menutab Section */
+	div.page-header {
+		background-color: #fff;
+		width: 100%;
+		height: 50px;
+		padding: 0px 5px 5px 10px;
+		position: fixed;
+	}
+
+	hr { border: 0.5px solid #e8e8e8 }
+
+	body{
+		margin: 0;
+	}
+
+
+	div.menu {
+		width: 95%;
+		margin-top: 10px;
+	}
+
+	h1 {
+		display: inline;
+		letter-spacing: 1pt;
+	}
+
+	div.menu h1, div.menu h1 a {
+		color: #4e57ac;
+		font-size: 20pt;
+		text-decoration: none;
+	}
+
+	div.menu > a {
+	}
+
+	div.category {
+		height: 30px;
+		display: inline;
+		float: right;
+		margin: 0 auto;
+		vertical-align: middle;
+	}
+
+	img.plus {
+		vertical-align: middle;
+		width: 15px;
+	}
+
+
+	a.write {
+		color: #4e57ac;
+		margin-right: 30px;
+		line-height: 30px;
+		font-size: 14pt;
+		font-weight: bold;
+	}
+
+	div.content-container {
+		width: 100%
+	}
+
+	div.post {
+		margin: 100px 0;
+	}
+
+	a {text-decoration: none;}
+	a:link, a:visited { color: #4e57ac; }
+	a:hover{ color: #72ace0}
+
+	div.col-md-8 {
+		width: 1000px;
+		margin:70px auto 70px auto;
+	}
+
+	div.content {
+		letter-spacing: 1pt;
+		line-height: 1.5;
+	}
+
+	/* Form */
+	p.form {
+		padding: 0 0;
+		margin: 10 0;
+		font-size: 14pt;
+		letter-spacing: 1pt;
+		line-height: 40px;
+	}
+
+	form.post-form input {
+		width: 950px;
+		float: right;
+		height: 40px;
+		font-size: 14pt;
+		letter-spacing: 1pt;
+	}
+
+	textarea {
+		width: 1000px;
+		height: 500px;
+		font-size: 11pt;
+		line-height: 1.5;
+		letter-spacing: 0.5pt;
+	}
+
+	button.save {
+		float: right;
+		font-family: 'helvetica-neue';
+		letter-spacing: 1pt;
+		font-size: 14pt;
+	}
+
+	code {
+		font-size: 11pt;
+		font-family: monospace;
+	}
+
+
+	/* Menu */
+	td.about {
+		vertical-align: bottom;
+		width: 775px;
+		padding-left: 40px;
+	}
+
+	span.about {
+
+		font-size: 12pt;
+		line-height: 1.5;
+		letter-spacing: 0.5pt;
+	}
+
+	h1.detail {
+		display: inline;
+	}
+
+	div.edit {
+		height: 40px;
+		float: right;
+	}
+
+	img.delete{ width: 15px; }
+
+	div.edit > a {
+		margin-left: 10px;
+	}
+
+	a.delete { color: #bc0f0f; }
+	a.delete:hover {color: #ff0000;}
+
+
+	/* Paginations */
+	span.pagination {
+		margin: 0 auto;
+		display: table;
+	}
+
+	li {
+		display: inline;
+		margin: 0 5px 0 5px;
+	}
+
+	span.page_num {
+		display: inline; 
+		font-weight: 800;
+		color: #4e57ac;
+	}
 }
