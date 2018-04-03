@@ -123,7 +123,7 @@ span.page_num {
 
 	div.menu h1, div.menu h1 a {
 		color: #4e57ac;
-		font-size: 20pt;
+		font-size: 16pt;
 		text-decoration: none;
 	}
 
@@ -173,6 +173,8 @@ span.page_num {
 		letter-spacing: 1pt;
 		line-height: 1.5;
 	}
+
+	div.content > p { font-size: 12pt; }
 
 	/* Form */
 	p.form {
@@ -228,6 +230,7 @@ span.page_num {
 
 	h1.detail {
 		display: inline;
+		font-size: 16pt;
 	}
 
 	div.edit {
