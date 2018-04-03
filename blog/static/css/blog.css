@@ -164,6 +164,8 @@ span.page_num {
 		margin: 100px 0;
 	}
 
+	div.date { font-size: 12pt; }
+
 	a {text-decoration: none;}
 	a:link, a:visited { color: #4e57ac; }
 	a:hover { color: #72ace0; }
