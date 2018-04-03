@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/*
 body {
 	font-family: sans-serif;
 	margin: 0;
@@ -34,10 +33,9 @@ img.plus {
 	vertical-align: middle;
 	width: 2vw;
 }
-*/
+
 
 /* list view */
-/*
 img.delete { width: 2vw }
 
 div.edit {
@@ -52,9 +50,8 @@ code {
 	font-size: 11pt;
 	font-family: monospace;
 }
-*/
+
 /*Menu*/
-/*
 td.about {
 	vertical-align: bottom;
 	width: 775px;
@@ -73,10 +70,9 @@ h1.detail {
 	display: inline;
 }
 
-*/
+
 
 /* Paginations */
-/*
 span.pagination {
 	margin: 0 auto;
 	display: table;
@@ -93,9 +89,9 @@ span.page_num {
 	color: #4e57ac;
 }
 
-*/
-/* Minimum width 860px */
-@media (min-width: 860px){
+
+/* Minimum width 750px */
+@media (min-width: 750px){
 
 	/* Menutab Section */
 	div.page-header {
