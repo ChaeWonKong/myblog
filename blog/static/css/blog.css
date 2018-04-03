@@ -4,7 +4,7 @@
 body {
 	font-family: sans-serif;
 	margin: 0;
-	padding: 0 20px 0 20px;
+	padding: 0 20px 20px 20px;
 	font-size: 2vw;
 	letter-spacing: 0.1vw;
 	line-height: 1.5;
@@ -28,9 +28,11 @@ a.write {
 
 div.menu {
 	width: 95%;
-	margin-top: 10px;
+	margin-top: 3vw;
 	background-color: #fff;
 }
+
+div.bg {margin-top: 2vw;}
 
 a {text-decoration: none;}
 a:link, a:visited { color: #4e57ac; }

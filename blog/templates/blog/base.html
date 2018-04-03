@@ -28,7 +28,7 @@
                 <a class="write" href="{% url 'category_list' category='pj' %}">projects</a>
                 <a class="write" href="{% url 'category_list' category='es' %}">essays</a>
                 {% if user.is_authenticated %}
-                <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" /></a>
+                <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" height="100%" /></a>
                 {% endif %}
             </div>
         </div>
