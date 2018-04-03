@@ -121,6 +121,10 @@ span.page_num {
 		letter-spacing: 1pt;
 	}
 
+	h2 { font-size: 14pt; }
+
+	h3 { font-size: 12pt; }
+
 	div.menu h1, div.menu h1 a {
 		color: #4e57ac;
 		font-size: 16pt;
