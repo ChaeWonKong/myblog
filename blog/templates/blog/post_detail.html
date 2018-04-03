@@ -24,7 +24,11 @@
 			<p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
 					{{ post.like }}
 			</p>
+	{% if post.like < 2 %}
 			<a href="{% url 'like_action' pk=post.pk %}" style="font-weight: bold; font-family: sans-serif;">Like</a>
+	{% else %}
+			<a href="{% url 'like_action' pk=post.pk %}" style="font-weight: bold; font-family: sans-serif;">Likes</a>
+	{% endif %}
 		</div>
 	</div>
 {% endblock %}
