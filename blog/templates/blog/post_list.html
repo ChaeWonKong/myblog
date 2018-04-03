@@ -10,7 +10,7 @@
     		</div>
         	<h1 class="detail"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <div class="edit">
-                <a href="{% url 'post_remove' pk=post.pk %}"><img src="{% static 'css/images/delete.png' %}" width="15px" />
+                <a href="{% url 'post_remove' pk=post.pk %}"><img class="delete" src="{% static 'css/images/delete.png' %}" />
                 </a>
             </div>
         	<div class="content">

@@ -3,10 +3,9 @@
 
 <html>
     <head>
-    	<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
 		<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/highlight/styles/monokai-sublime.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/highlight/styles/dracula.css' %}">
         <script src="{% static 'css/highlight/highlight.pack.js' %}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <title>Leon Kong's Blog</title>
@@ -23,7 +22,7 @@
                 <a class="write" href="{% url 'category_list' category='pj' %}">projects</a>
                 <a class="write" href="{% url 'category_list' category='es' %}">essays</a>
                 {% if user.is_authenticated %}
-                <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" width="15px" /></a>
+                <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" /></a>
                 {% endif %}
             </div>
         </div>
