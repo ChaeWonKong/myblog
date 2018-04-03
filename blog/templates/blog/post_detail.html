@@ -4,30 +4,30 @@
 
 {% block content %}
 	<div class="post">
-		{% if post.created_date %}
+		{% if posts.created_date %}
 			<div class="date">
-				{{ post.created_date }}
+				{{ posts.created_date }}
 			</div>
 		{% endif %}
 		
-		<h1 class="detail">{{ post.title }}</h1>
+		<h1 class="detail">{{ posts.title }}</h1>
 		<div class="edit">
 			{% if user.is_authenticated %}
-			<a href="{% url 'post_edit' pk=post.pk %}">edit</a>
-			<a class="delete" href="{% url 'post_remove' pk=post.pk %}">delete</a>
+			<a href="{% url 'post_edit' pk=posts.pk %}">edit</a>
+			<a class="delete" href="{% url 'post_remove' pk=posts.pk %}">delete</a>
 			{% endif %}
 		</div>
 		<div class="content">
-			{{ post.text|markdown|safe }}
+			{{ posts.text|markdown|safe }}
 		</div>
 		<div class="interaction">
 			<p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
-					{{ post.like }}
+					{{ posts.like }}
 			</p>
-			{% if post.like < 2 %}
-				<a href="{% url 'like_action' pk=post.pk %}" style="font-weight: bold; font-family: sans-serif;">Like</a>
+			{% if posts.like < 2 %}
+				<a href="{% url 'like_action' pk=posts.pk %}" style="font-weight: bold; font-family: sans-serif;">Like</a>
 			{% else %}
-				<a href="{% url 'like_action' pk=post.pk %}" style="font-weight: bold; font-family: sans-serif;">Likes</a>
+				<a href="{% url 'like_action' pk=posts.pk %}" style="font-weight: bold; font-family: sans-serif;">Likes</a>
 			{% endif %}
 		</div>
 	</div>
