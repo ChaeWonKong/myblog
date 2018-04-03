@@ -17,6 +17,15 @@ div.page-header {
 	position: fixed;
 }
 
+/* Top menu */
+a.write {
+	color: #4e57ac;
+	margin-right: 5vw;
+	line-height: 5vw;
+	font-size: 3vw;
+	font-weight: bold;
+}
+
 div.menu {
 	width: 95%;
 	margin-top: 10px;
