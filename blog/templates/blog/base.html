@@ -11,11 +11,11 @@
 
         <!-- Facebook OG meta tags -->
         {% if post %}
-        <meta property="og:url" content="{% url 'post_detail' pk=post.pk %}">
+        <meta property="og:url" content="http://leonkong.com/{% url 'post_detail' pk=post.pk %}">
         <meta property="og:type" content="article" />
         <meta property="og:title" content="{{ post.title }}" />
         <meta property="og:Description" content="{{ post.text|truncatewords:20 }}" />
-        <meta property="og:image" content="{% static 'css/images/main2.jpg' %}" />
+        <meta property="og:image" content="http://leonkong.com/{% static 'css/images/main2.jpg' %}" />
         {% endif %}
 
         <!-- static and CSS -->
