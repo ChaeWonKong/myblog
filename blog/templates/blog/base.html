@@ -9,6 +9,15 @@
         <meta name="Description" content="Auther: {{ post.author }}, Title: {{ post.title }}, {{ post.text|truncatewords:20 }}">
         {% endif %}
 
+        <!-- Facebook OG meta tags -->
+        {% if post %}
+        <meta property="og:url" content="{% url 'post_detail' pk=post.pk %}">
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="{{ post.title }}" />
+        <meta property="og:Description" content="{{ post.text|truncatewords:20 }}" />
+        <meta property="og:image" content="{% static 'css/images/main2.jpg' %}" />
+        {% endif %}
+
         <!-- static and CSS -->
 		<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
         <link rel="stylesheet" href="{% static 'css/highlight/styles/dracula.css' %}">
