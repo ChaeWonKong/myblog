@@ -6,7 +6,7 @@
         <!-- Google Search Engine Optimization-->
         <meta name="google-site-verification" content="x4BZ6AdEAsI8UE60J2I8BMnA9gCp1ErJwh2gjI6sZdE" />
         {% if post %}
-        <meta name="Description" content="Auther: { post.author }, Title: { post.title }, { post.text|truncatewords:20 }">
+        <meta name="Description" content="Auther: {{ post.author }}, Title: {{ post.title }}, {{ post.text|truncatewords:20 }}">
         {% endif %}
 
         <!-- static and CSS -->
