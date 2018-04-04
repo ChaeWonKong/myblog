@@ -3,7 +3,7 @@
 
 body {
 	font-family: sans-serif;
-	margin: 0;
+	margin-top: 0;
 	padding: 0 20px 20px 20px;
 	font-size: 2vw;
 	letter-spacing: 0.1vw;
@@ -28,11 +28,11 @@ a.write {
 
 div.menu {
 	width: 95%;
-	margin-top: 3vw;
+	margin-top: 0;
 	background-color: #fff;
 }
 
-div.bg {margin-top: 2vw;}
+dig.bg > img { margin-top: 28vw; }
 
 a {text-decoration: none;}
 a:link, a:visited { color: #4e57ac; }
@@ -119,13 +119,13 @@ span.page_num {
 	hr { border: 0.5px solid #e8e8e8; }
 
 	body{
-		margin: 0;
+		margin-top: 0;
 	}
 
 
 	div.menu {
 		width: 95%;
-		margin-top: 10px;
+		margin-top: 0;
 	}
 
 	h1 {
