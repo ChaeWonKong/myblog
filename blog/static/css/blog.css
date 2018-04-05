@@ -288,9 +288,8 @@ span.page_num {
 	/* Interaction */
 	div.interaction { 
 		font-size: 1.2vw;
-		display: inline;
 		width: 1000px;
-		margin-top: 2vw;
+		margin-top: 5vw;
 	}
 
 	div.interaction > div { float: right; }
