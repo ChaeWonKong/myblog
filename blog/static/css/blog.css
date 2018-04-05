@@ -102,6 +102,14 @@ span.page_num {
 	color: #4e57ac;
 }
 
+/* Interaction */
+div.interaction { 
+	margin-top: 2vw;
+	width: 95%;
+}
+
+div.interaction > div { float: right; }
+
 
 /* Minimum width 1024px */
 @media (min-width: 1024px)
