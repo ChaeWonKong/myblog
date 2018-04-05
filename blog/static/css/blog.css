@@ -286,4 +286,10 @@ span.page_num {
 	}
 }
 	/* Interaction */
-	dif.interaction { font-size: 1.2vw; }
+	div.interaction { 
+		font-size: 1.2vw;
+		display: inline;
+		width: 1000px;
+	}
+
+	div.fb-share-button { float: right; }
