@@ -290,6 +290,7 @@ span.page_num {
 		font-size: 1.2vw;
 		display: inline;
 		width: 1000px;
+		margin-top: 2vw;
 	}
 
 	div.interaction > div { float: right; }
