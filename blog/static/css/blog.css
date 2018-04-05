@@ -292,4 +292,4 @@ span.page_num {
 		width: 1000px;
 	}
 
-	div.fb-share-button { float: right; }
+	div.interaction > div { float: right; }
