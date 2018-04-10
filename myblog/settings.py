@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 # MySQL
 import json
 
-fd = open('.config/db.json')
+fd = open('/home/ubuntu/myblog/myblog/.config/db.json')
 db_info = json.load(fd)
 
 DATABASES = {
@@ -86,8 +86,9 @@ DATABASES = {
         'PORT': '3306',
         'NAME': db_info['NAME'],
         'USER': db_info['USER'],
-        'PASSWORD': db_info['PASSWORD']
-    }
+        'PASSWORD': db_info['PASSWORD'],   
+	'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",}
+ }
 }
 
 
