@@ -73,12 +73,20 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+# MySQL
+import json
+
+fd = open('.config/db.json')
+db_info = json.load(fd)
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'leonkong-db.cvotzhzzafcr.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '3306',
+        'NAME': db_info['NAME'],
+        'USER': db_info['USER'],
+        'PASSWORD': db_info['PASSWORD']
     }
 }
 
