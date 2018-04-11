@@ -95,7 +95,7 @@ def category_list(request, category):
 
 
 def like_action(request, pk):
-	"""Like action: add +1 to post.like"""
+	"""Like action: add +1 to post.like_button"""
 
 	post = get_object_or_404(Post, pk=pk)
 	post.like_button = post.like_button + 1
