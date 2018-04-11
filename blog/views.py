@@ -98,7 +98,7 @@ def like_action(request, pk):
 	"""Like action: add +1 to post.like"""
 
 	post = get_object_or_404(Post, pk=pk)
-	post.like = post.like + 1
+	post.like_button = post.like_button + 1
 	post.save()
 
 	return redirect('post_detail', pk=post.pk)
