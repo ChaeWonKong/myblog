@@ -11,5 +11,5 @@ urlpatterns = [
 		path('post/<int:pk>/remove/', views.post_remove, name='post_remove'),
 		path('<str:category>', views.category_list, name='category_list'),
 		path('<int:pk>/like_action/', views.like_action, name='like_action'),
-		path('casetalk/', views.buttons, name="buttons"),
+		path('buttons/', views.buttons, name="buttons"),
 ]
