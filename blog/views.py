@@ -1,4 +1,5 @@
 import request
+import json
 from bs4 import BeautifulSoup
 
 from django.contrib.auth.models import User
@@ -28,7 +29,7 @@ def case_scraper(request):
 def buttons(request):
 	return JsonResponse({
 		"type": "buttons",
-		"buttons": ['판례검색']
+		"buttons": ['판례검색', ]
 		})
 
 
