@@ -12,4 +12,5 @@ urlpatterns = [
 		path('<str:category>', views.category_list, name='category_list'),
 		path('<int:pk>/like_action/', views.like_action, name='like_action'),
 		path('buttons/', views.buttons, name="buttons"),
+		path('keyboard', views.buttons, name="keyboard"),
 ]
