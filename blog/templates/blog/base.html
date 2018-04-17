@@ -13,7 +13,7 @@
 
         <!-- Facebook OG meta tags -->
         {% if post %}
-        <meta property="og:url" content="http://leonkong.com{% url 'post_detail' id=post.id %}">
+        <meta property="og:url" content="http://leonkong.com{% url 'post_detail' pk=post.id %}">
         <meta property="og:type" content="article" />
         <meta property="og:title" content="{{ post.title }}" />
         <meta property="og:Description" content="{{ post.text|truncatewords:20 }}" />
