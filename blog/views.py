@@ -79,7 +79,7 @@ def post_list(request):
 
 
 def post_detail(request, pk):
-	post = get_object_or_404(Post, id=pk)
+	post = get_object_or_404(Post, pk=pk)
 	return render(request, 'blog/post_detail.html', {'posts': post})
 
 
@@ -93,7 +93,7 @@ def post_new(request):
 			post.created_date = timezone.now()
 			post.save()
 
-			return redirect('post_detail', pk=post.id)
+			return redirect('post_detail', pk=post.pk)
 	else:
 		form = PostForm()
 
@@ -101,7 +101,7 @@ def post_new(request):
 
 
 def post_edit(request, pk):
-	post = get_object_or_404(Post, id=pk)
+	post = get_object_or_404(Post, pk=pk)
 
 	if request.method == "POST":
 		form = PostForm(request.POST, instance=post)
@@ -112,7 +112,7 @@ def post_edit(request, pk):
 			post.created_date = timezone.now()
 			post.save()
 
-			return redirect('post_detail', pk=post.id)
+			return redirect('post_detail', pk=post.pk)
 
 	else:
 		form = PostForm(instance=post)
@@ -121,7 +121,7 @@ def post_edit(request, pk):
 
 
 def post_remove(request, pk):
-	post = get_object_or_404(Post, id=pk)
+	post = get_object_or_404(Post, pk=pk)
 	post.delete()
 
 	return redirect('post_list')
@@ -152,8 +152,8 @@ def category_list(request, category):
 def like_action(request, pk):
 	"""Like action: add +1 to post.like_button"""
 
-	post = get_object_or_404(Post, id=pk)
+	post = get_object_or_404(Post, pk=pk)
 	post.like_button = post.like_button + 1
 	post.save()
 
-	return redirect('post_detail', pk=post.id)
+	return redirect('post_detail', pk=post.pk)

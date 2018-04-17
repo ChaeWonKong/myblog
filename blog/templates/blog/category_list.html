@@ -8,10 +8,10 @@
     		<div class="date">
     		<p>{{ post.created_date }}</p>
     		</div>
-        	<h1 class="detail"><a href="{% url 'post_detail' pk=post.id %}">{{ post.title }}</a></h1>
+        	<h1 class="detail"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <div class="edit">
                 {% if user.is_authenticated %}
-                <a href="{% url 'post_remove' pk=post.id %}"><img src="{% static 'css/images/delete.png' %}" width="15px" />
+                <a href="{% url 'post_remove' pk=post.pk %}"><img src="{% static 'css/images/delete.png' %}" width="15px" />
                 {% endif %}
                 </a>
             </div>
