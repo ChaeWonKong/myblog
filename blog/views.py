@@ -167,7 +167,7 @@ def upload(request):
 			image = imgform.save(commit=False)
 			image.save()
 			src = get_object_or_404(PostImage, pk=image.pk).img.url
-			return render(request, "blog/upload.html", {'imgform': form, 'src': src})
+			return render(request, "blog/upload.html", {'imgform': imgform, 'src': src})
 	else:
 		imgform = ImageForm()
 	return render(request, "blog/upload.html", {'imgform': imgform})
