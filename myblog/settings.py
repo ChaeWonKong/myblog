@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
 # Application definition
 
 INSTALLED_APPS = [
+    'django_embed_template',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
