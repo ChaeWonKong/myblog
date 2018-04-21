@@ -1,0 +1,17 @@
+{% extends 'blog/post_edit.html' %}
+{% load static %}
+
+{% block content %}
+	<p>Image Upload</p>
+	<form method="POST" enctype="multipart/form-data" novalidate>
+		{% csrf_token %}
+
+		{{ fomr }}
+
+		<button type="submit">Upload</button>
+	</form>
+	{% if src %}
+		{{ src }}
+	{% endif %}
+
+{% endblock %}

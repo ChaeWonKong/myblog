@@ -9,8 +9,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 
-from .forms import PostForm
-from .models import Post
+from .forms import PostForm, ImageForm
+from .models import Post, PostImage
 
 
 def case_scraper(request):
@@ -157,3 +157,18 @@ def like_action(request, pk):
 	post.save()
 
 	return redirect('post_detail', pk=post.pk)
+
+
+def upload(request):
+	form = ImageForm(request.POST, request.FILES)
+
+	if request.method == 'POST':
+		if form.is_valid():
+			image = form.save(commit=False)
+			image.save()
+			src = get_object_or_404(PostImage, pk=image.pk).img.url
+			return render(request, "blog/upload.html", {'form': form, 'src': src})
+	else:
+		form = ImageForm()
+	return render(request, "blog/upload.html", {'form': form})
+
