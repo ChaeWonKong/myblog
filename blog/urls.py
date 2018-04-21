@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path
 from . import views
 
@@ -13,4 +15,4 @@ urlpatterns = [
 		path('post/<int:pk>/remove/', views.post_remove, name='post_remove'),
 		path('<str:category>', views.category_list, name='category_list'),
 		path('post/<int:pk>/like_action/', views.like_action, name='like_action'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
