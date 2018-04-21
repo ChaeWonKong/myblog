@@ -28,7 +28,7 @@ class Post(models.Model):
 
 class PostImage(models.Model):
 	title = models.CharField(max_length=100)
-	img = models.IMageField(null=True)
+	img = models.ImageField(null=True)
 
 	def __str__(self):
 		return self.title
