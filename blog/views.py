@@ -160,15 +160,15 @@ def like_action(request, pk):
 
 
 def upload(request):
-	form = ImageForm(request.POST, request.FILES)
+	imgform = ImageForm(request.POST, request.FILES)
 
 	if request.method == 'POST':
-		if form.is_valid():
-			image = form.save(commit=False)
+		if imgform.is_valid():
+			image = imgform.save(commit=False)
 			image.save()
 			src = get_object_or_404(PostImage, pk=image.pk).img.url
-			return render(request, "blog/upload.html", {'form': form, 'src': src})
+			return render(request, "blog/upload.html", {'imgform': form, 'src': src})
 	else:
-		form = ImageForm()
-	return render(request, "blog/upload.html", {'form': form})
+		imgform = ImageForm()
+	return render(request, "blog/upload.html", {'imgform': imgform})
 
