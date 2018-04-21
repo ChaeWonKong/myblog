@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load embed %}
 
 {% block content %}
 	<h1>New Post</h1>
@@ -9,6 +10,8 @@
 		<p class="form">Text:</p>{{ form.text }}
 		<button type="submit" class="save">Save</button>
 	</form>
-	{% block upload %}
-	{% endblock upload %}
+	{% embed 'upload.html' %}
+		{% block upload %}
+		{% endblock %}
+	{% endembed %}
 {% endblock content %}
