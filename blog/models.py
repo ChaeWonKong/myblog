@@ -24,3 +24,11 @@ class Post(models.Model):
 
 	def __str__(self):
 		return self.title
+
+
+class PostImage(models.Model):
+	title = models.CharField(max_length=100)
+	img = models.IMageField(null=True)
+
+	def __str__(self):
+		return self.title
