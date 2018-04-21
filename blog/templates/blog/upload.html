@@ -1,7 +1,7 @@
 {% extends 'blog/post_edit.html' %}
 {% load static %}
 
-{% block content %}
+{% block upload %}
 	<p>Image Upload</p>
 	<form method="POST" enctype="multipart/form-data" novalidate>
 		{% csrf_token %}
