@@ -1,5 +1,5 @@
 {% extends 'blog/base.html' %}
-{% include 'http://www.leonkong.com/post/upload/' %}
+{% include 'blog/upload.html' %}
 
 {% block content %}
 	<h1>New Post</h1>
@@ -10,6 +10,6 @@
 		<p class="form">Text:</p>{{ form.text }}
 		<button type="submit" class="save">Save</button>
 	</form>
-	{% include 'http://www.leonkong.com/post/upload/' %}
+	{% include 'blog/upload.html' %}
 {% endblock %}
 
