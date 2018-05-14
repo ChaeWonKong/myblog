@@ -133,8 +133,11 @@ div.interaction > div { float: right; }
 
 
 	div.menu {
+		display: flex;
 		width: 95%;
 		margin-top: 0;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	h1 {
@@ -157,10 +160,8 @@ div.interaction > div { float: right; }
 
 	div.category {
 		height: 30px;
-		display: inline;
-		float: right;
+		display: block !important;
 		margin-top: 15px;
-		vertical-align: middle;
 	}
 
 	img.plus {
@@ -291,6 +292,29 @@ div.interaction > div { float: right; }
 		display: inline; 
 		font-weight: 800;
 		color: #4e57ac;
+	}
+	.toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.category {
+		display: none;
+	}
+
+	.toggle {
+		margin-right: 10px;
+		padding: 0;
+		border: none;
+		outline: none;
+		background: none;
+		opacity: 0.5;
+		cursor: pointer;
+	}
+
+	.toggle:hover {
+		opacity: 0.3;
 	}
 }
 	/* Interaction */
