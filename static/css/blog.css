@@ -2,7 +2,7 @@
 
 
 body {
-	font-family: sans-serif;
+	font-family: 'Montserrat', 'Gothic A1', sans-serif;
 	margin-top: 0;
 	padding: 0 20px 20px 20px;
 	font-size: 2vw;
@@ -53,14 +53,14 @@ img.delete { width: 2vw; }
 div.edit {
 	height: 40px;
 	float: right;
-	font-family: 'helvetica-neue';
+	font-family: 'Montserrat', 'Gothic A1', sans-serif;
 	letter-spacing: 1pt;
 	font-size: 14pt;
 }
 
 code {
 	font-size: 11pt;
-	font-family: monospace;
+	font-family: 'Montserrat', 'Gothic A1', sans-serif;
 }
 
 /*Menu*/
@@ -231,14 +231,14 @@ div.interaction > div { float: right; }
 
 	button.save {
 		float: right;
-		font-family: 'helvetica-neue';
+		font-family: 'Montserrat', 'Gothic A1', sans-serif;
 		letter-spacing: 1pt;
 		font-size: 1.5vw;
 	}
 
 	code {
 		font-size: 11pt;
-		font-family: monospace;
+		font-family: 'Montserrat', 'Gothic A1', sans-serif;
 	}
 
 
