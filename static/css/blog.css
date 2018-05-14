@@ -306,7 +306,7 @@ div.interaction > div { float: right; }
 		justify-content: space-between;
 	}
 
-	.toggle {
+	button.toggle {
 		margin-right: 10px;
 		padding: 0;
 		border: none;
@@ -316,7 +316,7 @@ div.interaction > div { float: right; }
 		cursor: pointer;
 	}
 
-	.toggle:hover {
+	button.toggle:hover {
 		opacity: 0.3;
 	}
 }
