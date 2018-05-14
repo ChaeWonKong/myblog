@@ -35,36 +35,21 @@
         <script src="{% static 'css/highlight/highlight.pack.js' %}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
 
-        <!-- icons and script -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-        <script>
-        $(function() {
-            $(".toggle").click(function() {
-                $(".category").slideToggle();
-            });
-        });
-        </script>
-
         {% if post %}
             <title>{{ post.title }}</title>
         {% else %}
             <title>Leon Kong's Blog</title>
         {% endif %}
+
+        <title>Leon Kong's Blog</title>
+
     </head>
     
 <body>
 
     <div class="page-header">
         <div class="menu">
-            <div class="category-small">
                 <h1><a href="/">Leon Kong's Blog</a></h1>
-                
-                <button type="button" class="toggle">
-                    <span class="fas fa-bars"></span>
-                </button>
-            </div>
             <div class="category">
                 <a class="write" href="{% url 'about' %}">about</a>
                 <a class="write" href="{% url 'category_list' category='cs' %}">computer science</a>
