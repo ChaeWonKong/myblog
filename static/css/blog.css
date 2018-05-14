@@ -159,16 +159,13 @@ div.interaction > div { float: right; }
 	}
 
 	div.category {
-		height: 30px;
 		display: block !important;
-		margin-top: 15px;
 	}
 
 	img.plus {
 		vertical-align: middle;
 		width: 15px;
 	}
-
 
 	a.write {
 		color: #4e57ac;
@@ -293,7 +290,7 @@ div.interaction > div { float: right; }
 		font-weight: 800;
 		color: #4e57ac;
 	}
-	.toggle {
+	.category-small .toggle {
 		display: none;
 	}
 }
@@ -301,6 +298,12 @@ div.interaction > div { float: right; }
 @media (max-width: 767px) {
 	.category {
 		display: none;
+	}
+
+	.category-small {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.toggle {
