@@ -10,17 +10,8 @@
 }
 
 body {
-<<<<<<< HEAD
-	font-family: 'Montserrat', 'Gothic A1', sans-serif;
-	margin-top: 0;
-	padding: 0 20px 20px 20px;
-	font-size: 2vw;
-	letter-spacing: 0.1vw;
-	line-height: 1.5;
-=======
     margin: 0;
     font-family: 'Montserrat', 'Gothic A1', '맑은 고딕', sans-serif;
->>>>>>> 4798732d5d6f34c6e42b5b2722c51966a2812d6a
 }
 
 i {
@@ -112,19 +103,10 @@ hr {
 .edit {
 	height: 40px;
 	float: right;
-<<<<<<< HEAD
-	font-family: 'Montserrat', 'Gothic A1', sans-serif;
-=======
->>>>>>> 4798732d5d6f34c6e42b5b2722c51966a2812d6a
 	letter-spacing: 1pt;
 	font-size: 14pt;
 }
 
-<<<<<<< HEAD
-code {
-	font-size: 11pt;
-	font-family: 'Montserrat', 'Gothic A1', sans-serif;
-=======
 /* Footer */
 footer {
     color: #fff;
@@ -165,7 +147,6 @@ header {
     z-index: 100;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
->>>>>>> 4798732d5d6f34c6e42b5b2722c51966a2812d6a
 }
 
 /* headA: Site Title */
@@ -360,78 +341,6 @@ textarea {
 		font-size: 11pt;
 		line-height: 1.5;
 		letter-spacing: 0.5pt;
-<<<<<<< HEAD
-	}
-
-	button.save {
-		float: right;
-		font-family: 'Montserrat', 'Gothic A1', sans-serif;
-		letter-spacing: 1pt;
-		font-size: 1.5vw;
-	}
-
-	code {
-		font-size: 11pt;
-		font-family: 'Montserrat', 'Gothic A1', sans-serif;
-	}
-
-
-	/* Menu */
-	td.about {
-		vertical-align: bottom;
-		width: 775px;
-		padding-left: 40px;
-	}
-
-	span.about {
-
-		font-size: 1.2vw;
-		line-height: 1.5;
-		letter-spacing: 0.5pt;
-	}
-
-	h1.detail {
-		display: inline;
-		font-size: 2vw;
-	}
-
-	div.edit {
-		height: 40px;
-		float: right;
-	}
-
-	img.delete { width: 15px; }
-
-	div.edit > a {
-		margin-left: 10px;
-	}
-
-	a.delete { color: #bc0f0f; }
-	a.delete:hover {color: #ff0000;}
-
-
-	/* Paginations */
-	span.pagination {
-		margin: 0 auto;
-		display: table;
-	}
-
-	li {
-		display: inline;
-		margin: 0 5px 0 5px;
-	}
-
-	span.page_num {
-		display: inline; 
-		font-weight: 800;
-		color: #4e57ac;
-	}
-	.category-small .toggle {
-		display: none;
-	}
-=======
->>>>>>> 4798732d5d6f34c6e42b5b2722c51966a2812d6a
-}
 
 .save {
     float: right;
