@@ -1,74 +1,118 @@
 {% load static %}
 {% load markdownify %}
 
-<html>
-    <head>
-        <!-- Google Search Engine Optimization-->
-        <meta name="google-site-verification" content="x4BZ6AdEAsI8UE60J2I8BMnA9gCp1ErJwh2gjI6sZdE" />
-        {% if post %}
-        <meta name="Description" content="Auther: Leon Kong, Title: {{ post.title }}, {{ post.text|truncatewords:20 }}">
-        {% else %}
-        <meta name="Description" content="Auther: Leon Kong, Title: Leon Kong's Blog, Dev blog about Python, Django, and Algorithm. ">
-        {% endif %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    {% if post %}
+        <title>{{ post.title }}</title>
+    {% else %}
+        <title>Leon Kong's Blog</title>
+    {% endif %}
+    
+    <!--Google-->
+    <meta name="google-site-verification" content="x4BZ6AdEAsI8UE60J2I8BMnA9gCp1ErJwh2gjI6sZdE" />
+    {% if post %}
+    <meta name="Description" content="Auther: Leon Kong, Title: {{ post.title }}, {{ post.text|truncatewords:20 }}">
+    {% else %}
+    <meta name="Description" content="Auther: Leon Kong, Title: Leon Kong's Blog, Dev blog about Python, Django, and Algorithm. ">
+    {% endif %}
 
-        <!-- Facebook OG meta tags -->
-        {% if post %}
-        <meta property="og:url" content="http://leonkong.com{% url 'post_detail' pk=post.pk %}">
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="{{ post.title }}" />
-        <meta property="og:Description" content="{{ post.text|truncatewords:20 }}" />
-        <meta property="og:image" content="http://leonkong.com{% static 'css/images/main2.jpg' %}" />
-        {% endif %}
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
+    <!--Facebook OG Meta Tags-->
+    {% if post %}
+    <meta property="og:url" content="http://leonkong.com{% url 'post_detail' pk=post.pk %}">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ post.title }}" />
+    <meta property="og:Description" content="{{ post.text|truncatewords:20 }}" />
+    <meta property="og:image" content="http://leonkong.com{% static 'css/images/main2.jpg' %}" />
+    {% endif %}
+
+    <!--Facebook Share Button-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
           js = d.createElement(s); js.id = id;
           js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
           fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- static and CSS -->
-        <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Montserrat" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/highlight/styles/dracula.css' %}">
-        <script src="{% static 'css/highlight/highlight.pack.js' %}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-
-        {% if post %}
-            <title>{{ post.title }}</title>
-        {% else %}
-            <title>Leon Kong's Blog</title>
-        {% endif %}
-
-        <title>Leon Kong's Blog</title>
-
-    </head>
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     
-<body>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+   
+    <!--Highlight.js-->
+    <link rel="stylesheet" href="{% static 'css/highlight/styles/dracula.css' %}">
+    <script src="{% static 'css/highlight/highlight.pack.js' %}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+   
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
 
-    <div class="page-header">
-        <div class="menu">
-                <h1><a href="/">Leon Kong's Blog</a></h1>
-            <div class="category">
-                <a class="write" href="{% url 'about' %}">about</a>
-                <a class="write" href="{% url 'category_list' category='cs' %}">computer science</a>
-                <a class="write" href="{% url 'category_list' category='pj' %}">projects</a>
-                <a class="write" href="{% url 'category_list' category='es' %}">essays</a>
-                {% if user.is_authenticated %}
-                <a class="write" href="{% url 'post_new' %}"><img class="plus" src="{% static 'css/images/plus.png' %}" /></a>
-                {% endif %}
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="/" class="headA">Leon Kong's Blog</a>
+
+                <button type="button" class="headC">
+                    <span class="fas fa-bars" title="MENU"></span>
+                </button>
             </div>
+            
+            <nav class="headB">
+                <ul>
+                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'category_list' category='cs' %}">computer science</a></li>
+                    <li><a href="{% url 'category_list' category='pj' %}">projects</a></li>
+                    <li><a href="{% url 'category_list' category='es' %}">essays</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'post_new' %}"><i class="far fa-plus-square"></i></a></li>
+                    {% endif %}
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="bg"><img src="{% static 'css/images/main2.jpg' %}" width="100%" /></div>
-    <div class="content-container">
-        <div class="row">
-            <div class="col-md-8">
+    </header>
+   
+    <section class="conA">
+        <div class="container">
+            <h1>Leon Kong's Blog</h1>
+            <p>Do, or Not Do. There's No Try.</p>
+        </div>
+    </section>
+    
+    <section class="conB">
+        <div class="container">
+           <a href="#"><h2>블로그 제목</h2></a>
+           <p>p tag tast</p>
+           <br><br><br><br><br><br><br>
             {% block content %}
+            <i class="far fa-trash-alt"></i>
+            
             {% endblock %}
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <h2>Leon Kong's Blog</h2>
+                <p>copyright &copy Leon Kong. All rights reserved.</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

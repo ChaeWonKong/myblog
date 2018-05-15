@@ -1,12 +1,11 @@
-	<p>Image Upload</p>
-	<form action="http://www.leonkong.com/post/upload/" form method="POST" enctype="multipart/form-data" novalidate>
-		{% csrf_token %}
+<p>Image Upload</p>
+<form action="http://www.leonkong.com/post/upload/" form method="POST" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
 
-		{{ imgform }}
+    {{ imgform }}
 
-		<button type="submit">Upload</button>
-	</form>
-	{% if src %}
-		{{ src }}
-	{% endif %}
-
+    <button type="submit">Upload</button>
+</form>
+{% if src %}
+    {{ src }}
+{% endif %}

@@ -5,21 +5,20 @@
 {% block content %}
 	<div class="post">
 		{% if post.created_date %}
-			<div class="date">
-				{{ post.created_date }}
-			</div>
+				<p>{{ post.created_date }}</p>
+			
 		{% endif %}
 		
-		<h1 class="detail">{{ post.title }}</h1>
+		<h1>{{ post.title }}</h1>
 		<div class="edit">
 			{% if user.is_authenticated %}
 			<a href="{% url 'post_edit' pk=post.pk %}">edit</a>
 			<a class="delete" href="{% url 'post_remove' pk=post.pk %}">delete</a>
 			{% endif %}
 		</div>
-		<div class="content">
+		<p>
 			{{ post.text|markdown|safe }}
-		</div>
+        </p>
 		<div class="interaction">
 			<p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
 					{{ post.like_button }}
