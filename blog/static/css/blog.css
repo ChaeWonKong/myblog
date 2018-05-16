@@ -106,7 +106,7 @@ hr {
 }
 
 .about .photo {
-    min-height: 300px;
+    min-height: 30vh;
     margin: 20px 0;
     background-image: url(/static/css/img/portrait.jpg);
     background-repeat: no-repeat;
