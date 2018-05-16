@@ -13,10 +13,7 @@
                 {% endif %}
                 </a>
             </div>
-            
-        	<p>
         		{{ post.text|markdown|safe|truncatewords:50 }}
-            </p>
     	<hr>
 	{% endfor %}
 

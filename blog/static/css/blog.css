@@ -318,6 +318,10 @@ span.about {
         line-height: 1.8;
         opacity: 0.8;
     }
+    
+    hr {
+        border: 0.2vw solid #e8e8e8;
+    }
 }
 
 
