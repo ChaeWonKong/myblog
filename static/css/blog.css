@@ -135,7 +135,7 @@ footer {
 
 footer .container {
     display: flex;
-    width: 100%
+    width: 100%;
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
@@ -336,7 +336,6 @@ header {
     /* Interaction */
     .interaction { 
         font-size: 4vw;
-        width: 100%;
         margin: 4vw 4vw;
     }
 
@@ -380,8 +379,8 @@ span.page_num {
 .interaction { 
     font-size: 14px;
     width: 1000px;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .interaction p {
