@@ -21,6 +21,7 @@
             {{ post.text|markdown|safe }}
         </p>
     </div>
+<!--
     <div class="interaction">
         <p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
                 {{ post.like_button }}
@@ -32,5 +33,6 @@
         {% endif %}
         <div class="fb-share-button" data-href="http://leonkong.com{% url 'post_detail' pk=post.pk %}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fleonkong.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
     </div>
+-->
 	
 {% endblock %}
