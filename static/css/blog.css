@@ -149,12 +149,13 @@ footer .container {
     margin-top: 0;
     margin-bottom: 10px;
     letter-spacing: 0.1em;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 .footA p {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 2.6vw;
 }
 
 /* Header */
@@ -260,6 +261,10 @@ header {
         font-size: 18px;
     }
     
+    .footA p {
+        font-size: 12px;
+    }
+    
     .headC {
         display: none;
     }
@@ -310,6 +315,10 @@ header {
         margin-bottom: 10px;
         font-size: 4.6vw;
     }
+    
+    .conB h2 {
+        font-size: 4.3vw;
+    }
 
     .conB p {
         margin-top: 0;
@@ -322,6 +331,7 @@ header {
     hr {
         border: 0.2vw solid #e8e8e8;
     }
+    
 }
 
 
