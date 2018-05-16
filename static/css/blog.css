@@ -105,6 +105,13 @@ hr {
     opacity: 0.5;
 }
 
+.about .photo {
+    min-height: 300px;
+    background-image: url(/static/css/img/portrait.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
 .edit {
 	height: 40px;
 	float: right;
@@ -193,22 +200,6 @@ header {
     background-color: var(--main-color);
 }
 
-/* Menu */
-td.about {
-	vertical-align: bottom;
-	width: 775px;
-	padding-left: 40px;
-}
-
-span.about {
-
-	font-size: 12pt;
-	line-height: 1.5;
-	letter-spacing: 0.5pt;
-	margin-right: 30px;
-}
-
-
 /* Screen Orientation: Landscape */
 @media (orientation: landscape)  {
     .conA h1 {
@@ -217,6 +208,18 @@ span.about {
     
     .conA p {
         font-size: 18px;
+    }
+    
+    .conB .about {
+        display: flex;
+    }
+    
+    .about .photo {
+        flex: 1;
+    }
+    
+    .about .text {
+        flex: 3;
     }
     
     header .container {
