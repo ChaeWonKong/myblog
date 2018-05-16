@@ -208,6 +208,63 @@ header {
     background-color: var(--main-color);
 }
 
+/* Interaction */
+.interaction { 
+    font-size: 14px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.interaction p {
+    font-size: 14px;
+}
+
+.interaction a {
+    fontsize: 14px;
+}
+
+.interaction div {
+    float: right;
+}
+
+/* Post Edit: forms and textareas */
+.form {
+    padding: 0 0;
+    margin: 10 0;
+    font-size: 14px;
+    letter-spacing: 1pt;
+    line-height: 40px;
+}
+
+.post-form input {
+    width: 950px;
+    float: right;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 1pt;
+}
+
+textarea {
+		width: 1000px;
+		height: 500px;
+		font-size: 11pt;
+		line-height: 1.5;
+		letter-spacing: 0.5pt;
+}
+
+.save {
+    float: right;
+    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    letter-spacing: 1pt;
+    font-size: 1.5vw;
+}
+
+code {
+    font-size: 12px;
+    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+}
+
 /* Screen Orientation: Landscape */
 @media (orientation: landscape)  {
     .conA h1 {
@@ -289,8 +346,7 @@ header {
     }
     
     .headC {
-        margin-right: 3vw;
-        padding:0;
+        padding-right: 3vw;
         border: none;
         outline: none;
         background: none;
@@ -341,7 +397,7 @@ header {
     .interaction {
         width: 1000px;
         font-size: 4vw;
-        margin: 4vw 4vw;
+        padding: 4vw 4vw;
     }
 
     .interaction p {
@@ -378,61 +434,4 @@ span.page_num {
 	display: inline; 
 	font-weight: 800;
 	color: #4e57ac;
-}
-
-/* Interaction */
-.interaction { 
-    font-size: 14px;
-    width: 1000px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.interaction p {
-    font-size: 14px;
-}
-
-.interaction a {
-    fontsize: 14px;
-}
-
-.interaction div {
-    float: right;
-}
-
-/* Post Edit: forms and textareas */
-.form {
-    padding: 0 0;
-    margin: 10 0;
-    font-size: 14px;
-    letter-spacing: 1pt;
-    line-height: 40px;
-}
-
-.post-form input {
-    width: 950px;
-    float: right;
-    height: 40px;
-    font-size: 14px;
-    letter-spacing: 1pt;
-}
-
-textarea {
-		width: 1000px;
-		height: 500px;
-		font-size: 11pt;
-		line-height: 1.5;
-		letter-spacing: 0.5pt;
-}
-
-.save {
-    float: right;
-    font-family: 'Montserrat', 'Gothic A1', sans-serif;
-    letter-spacing: 1pt;
-    font-size: 1.5vw;
-}
-
-code {
-    font-size: 12px;
-    font-family: 'Montserrat', 'Gothic A1', sans-serif;
 }
