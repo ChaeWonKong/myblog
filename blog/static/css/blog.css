@@ -270,21 +270,21 @@ span.about {
     }
     
     .headA {
-        line-height: 6vh;
-        font-size: 3vw;
+        line-height: 7vh;
+        font-size: 4vw;
     }
     
     .headB a {
-        font-size: 2vw;
+        font-size: 3.8vw;
     }
     
     .headC {
-        margin-right: 1.5vw;
+        margin-right: 2vw;
         padding:0;
         border: none;
         outline: none;
         background: none;
-        font-size: 3vw;
+        font-size: 4vw;
         opacity: 0.5;
         cursor: pointer;
     }
