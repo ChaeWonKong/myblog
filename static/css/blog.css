@@ -332,6 +332,8 @@ code {
 @media (orientation: portrait) {
     body {
         margin: 0;
+        overflow-x: hidden;
+        width: 100%
     }
     
     header .container-small {
