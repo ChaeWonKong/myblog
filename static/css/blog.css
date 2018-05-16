@@ -295,10 +295,11 @@ span.about {
     
     .headB {
         display: none;
+        padding: 4vw 4vw;
     }
     
     /* conB: Post Lists */
-    .conB h2 {
+    .conB h1 {
         margin-top: 0;
         margin-bottom: 10px;
         font-size: 4vw;
