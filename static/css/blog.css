@@ -304,13 +304,13 @@ span.about {
     .conB h1 {
         margin-top: 0;
         margin-bottom: 10px;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     .conB p {
         margin-top: 0;
         margin bottom: 20px;
-        font-size: 3vw;
+        font-size: 4  vw;
         line-height: 1.8;
         opacity: 0.8;
     }
