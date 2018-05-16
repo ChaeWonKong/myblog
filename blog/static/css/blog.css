@@ -109,7 +109,11 @@ hr {
     min-height: 300px;
     background-image: url(/static/css/img/portrait.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: contain;
+}
+
+.about .text {
+    padding: 20px;
 }
 
 .edit {
@@ -220,6 +224,7 @@ header {
     
     .about .text {
         flex: 3;
+        padding: 50px;
     }
     
     header .container {
@@ -255,18 +260,6 @@ header {
     .headC {
         display: none;
     }
-    
-    td.about {
-		vertical-align: bottom;
-		width: 775px;
-		padding-left: 40px;
-	}
-
-	span.about {
-		font-size: 1.2vw;
-		line-height: 1.5;
-		letter-spacing: 0.5pt;
-	}
 }
 
 /* Screen Orientation: Portrait */
