@@ -369,7 +369,7 @@ code {
     }
     
     .conB .container {
-        width: inherit;
+        width: 100%;
     }
     .conB h1 {
         margin-top: 0;
