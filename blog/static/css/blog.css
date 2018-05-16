@@ -204,8 +204,8 @@ span.about {
 }
 
 
-/*Screen Size Above 768px */
-@media (min-width: 768px) {
+/* Screen Orientation: Landscape */
+@media (orientation: landscape)  {
     .conA h1 {
         font-size: 48px;
     }
@@ -261,8 +261,8 @@ span.about {
 	}
 }
 
-/* Screen Size Below 767px */
-@media (max-width: 767px) {
+/* Screen Orientation: Portrait */
+@media (orientation: portrait) {
     header .container-small {
         display: flex;
         align-items: center;
