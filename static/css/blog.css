@@ -333,8 +333,27 @@ header {
         border: 0.2vw solid #e8e8e8;
     }
     
-}
+    /* Interaction */
+    .interaction { 
+        font-size: 4vw;
+        width: 1000px;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
 
+    .interaction p {
+        font-size: 4vw;
+    }
+
+    .interaction a {
+        fontsize:4vw;
+    }
+
+    .interaction div {
+        float: right;
+    }
+    
+}
 
 /* Paginations */
 span.pagination {
@@ -355,14 +374,18 @@ span.page_num {
 
 /* Interaction */
 .interaction { 
-    font-size: 4vw;
+    font-size: 14px;
     width: 1000px;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 
 .interaction p {
-    font-size: 4vw;
+    font-size: 14px;
+}
+
+.interaction a {
+    fontsize: 14px;
 }
 
 .interaction div {
