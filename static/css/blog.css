@@ -135,6 +135,7 @@ footer {
 
 footer .container {
     display: flex;
+    width: 100%
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
@@ -354,9 +355,14 @@ span.page_num {
 
 /* Interaction */
 .interaction { 
-    font-size: 1.2vw;
+    font-size: 4vw;
     width: 1000px;
     margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.interaction p {
+    font-size: 4vw;
 }
 
 .interaction div {
@@ -396,6 +402,6 @@ textarea {
 }
 
 code {
-    font-size: 11pt;
+    font-size: 12px;
     font-family: 'Montserrat', 'Gothic A1', sans-serif;
 }
