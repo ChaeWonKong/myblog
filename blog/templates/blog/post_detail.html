@@ -16,9 +16,11 @@
         <a class="delete" href="{% url 'post_remove' pk=post.pk %}">delete</a>
         {% endif %}
     </div>
-    <p>
-        {{ post.text|markdown|safe }}
-    </p>
+    <div>
+        <p>
+            {{ post.text|markdown|safe }}
+        </p>
+    </div>
     <div class="interaction">
         <p style="color: #4e57ac; display: inline; font-weight: bold; font-family: sans-serif;">
                 {{ post.like_button }}
