@@ -269,13 +269,22 @@ span.about {
         justify-content: space-between;
     }
     
+    .headA {
+        line-height: 16vh;
+        font-size: 3vw;
+    }
+    
+    .headB a {
+        font-size: 2vw;
+    }
+    
     .headC {
-        margin-right: 10px;
+        margin-right: 1.5vw;
         padding:0;
         border: none;
         outline: none;
         background: none;
-        font-size: 28px;
+        font-size: 3vw;
         opacity: 0.5;
         cursor: pointer;
     }
