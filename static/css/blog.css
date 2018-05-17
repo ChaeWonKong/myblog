@@ -440,7 +440,9 @@ span.page_num {
     
     /* Interaction */
     .interaction {
-        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         font-size: 4vw;
         padding: 4vw 4vw;
     }
@@ -454,7 +456,7 @@ span.page_num {
     }
 
     .interaction div {
-        float: right;
+        
     }
     
     code {
