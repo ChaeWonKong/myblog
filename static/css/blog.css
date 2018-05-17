@@ -447,16 +447,26 @@ span.page_num {
         padding: 4vw 4vw;
     }
 
+    .interaction .like {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .interaction p {
+        margin-left: 0;
+        padding-left: 0;
         font-size: 4vw;
     }
 
     .interaction a {
+        margin-left: 0;
+        padding-left: 0;
         fontsize:4vw;
     }
 
     .interaction div {
-        
+        margin-right: 0;
+        padding-right: 0;
     }
     
     code {
