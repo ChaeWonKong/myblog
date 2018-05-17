@@ -261,12 +261,20 @@ textarea {
 }
 
 code {
+    padding-top: 0;
+    padding-bottom: 15px;
+    padding-left: 20px;
     font-size: 12px;
     font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+
 }
 
 /* Paginations */
 .pagination {
+    color: #D0CACA;
+    color: var(--main-color);
     margin: 0 auto;
     display: table;
 }
