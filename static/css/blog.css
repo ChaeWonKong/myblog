@@ -458,8 +458,14 @@ span.page_num {
     }
     
     code {
-        font-size: 4vw;
-        font-family: 'Montserrat', 'Gothic A1', sans-serif;
-    }
+    padding-top: 0 !important;
+    padding-bottom: 2.5vw !important;
+    padding-left: 3vw !important;
+    font-size: 4vw;
+    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+
+}
     
 }
