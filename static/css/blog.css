@@ -209,23 +209,33 @@ header {
 }
 
 /* Interaction */
-.interaction { 
-    font-size: 14px;
+.interaction {
+    display: flex;
+    justify-content: space-between;
     width: 1000px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.interaction .like {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .interaction p {
+    margin-left: 0;
+    padding-left: 0;
     font-size: 14px;
 }
 
 .interaction a {
-    fontsize: 14px;
+    margin-left: 0;
+    padding-left: 0;
+    fontsize:14px;
 }
 
 .interaction div {
-    float: right;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 /* Post Edit: forms and textareas */
