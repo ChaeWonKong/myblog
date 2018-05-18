@@ -14,9 +14,13 @@
                 {% endif %}
             </div>
             <div>
+                {% if 'code' in post.text %}
         		<p>
-                   {{ post.text|markdown|safe|truncatewords:50 }}
+                   {{ post.text|markdown|safe|truncatewords:50 }} </code></pre>
                </p>
+                {% else %}
+                    <p> {{ post.text|markdown|safe|truncatewords:50 }} </p>
+                {% endif %}
             </div>
     	<hr>
 	{% endfor %}
