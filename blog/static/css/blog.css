@@ -80,7 +80,7 @@ hr {
 }
 
 .conB h3 {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
 }
 
@@ -442,12 +442,13 @@ span.page_num {
     }
     
     .conB h2 {
-        font-size: 4.4vw;
+        font-size: 4.3vw;
     }
 
     .conB h3 {
-        color: rgba(0, 0, 0, 0.8);
-        font-size: 4.2vw;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 4vw;
+        font-weight: bold;
     }
 
     .conB p {
