@@ -69,6 +69,7 @@ hr {
     color: #65836E;
     color: var(--dark-green-color);
     font-size: 32px;
+    font-weight: bold;
 }
 
 .conB h2 {
@@ -77,11 +78,13 @@ hr {
     color: #797F83;
     color: var(--sky-dark-color);
     font-size: 24px;
+    font-weight: bold;
 }
 
 .conB h3 {
     color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
+    font-weight: bold;
 }
 
 .conB p {
