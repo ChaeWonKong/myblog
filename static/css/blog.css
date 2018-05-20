@@ -131,6 +131,7 @@ hr {
 }
 
 .edit {
+    display: inline-block;
 	height: 40px;
 	float: right;
 	letter-spacing: 1pt;
