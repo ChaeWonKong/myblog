@@ -3,6 +3,7 @@ import json
 
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
@@ -11,6 +12,7 @@ from .forms import PostForm, ImageForm
 from .models import Post, PostImage
 
 
+@csrf_exempt
 def post_list(request):
 	page_list = \
 		Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
