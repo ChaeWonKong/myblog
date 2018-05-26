@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', 'Gothic A1', '맑은 고딕', sans-serif;
+    font-family: 'Montserrat', 'Nanum Gothic', '맑은 고딕', sans-serif;
 }
 
 i {
@@ -277,7 +277,7 @@ textarea {
 
 .save {
     float: right;
-    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
     letter-spacing: 1pt;
     font-size: 1.5vw;
 }
@@ -287,7 +287,7 @@ code {
     padding-bottom: 15px !important;
     padding-left: 20px !important;
     font-size: 12px;
-    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.8;
 
@@ -501,7 +501,7 @@ span.page_num {
     padding-bottom: 2.5vw !important;
     padding-left: 3vw !important;
     font-size: 4vw;
-    font-family: 'Montserrat', 'Gothic A1', sans-serif;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.8;
 
