@@ -7,10 +7,12 @@
 		{% csrf_token %}
 		<p class="form">Category: {{ form.category }}</p>
 		<p class="form">Title:{{ form.title }}</p>
-		<input type="button" value="Javascript" id="js_code" />
-		<input type="button" value="python" id="py_code" />
+		<input type="button" value="Javascript" id="js_code" width="25px" />
+		<input type="button" value="python" id="py_code" width="25px"/>
 		<p class="form">Text:</p>{{ form.text }}
 		<button type="submit" class="save">Save</button>
 	</form>
+
+	<script src="{% static 'css/blog.js' %}">
 	{% include 'blog/upload.html' %}
 {% endblock %}
