@@ -6,13 +6,13 @@
 	<form method="POST" class="post-form">
 		{% csrf_token %}
 		<p class="form">Category: {{ form.category }}</p>
-		<p class="form">Title:{{ form.title }}</p>
-		<input type="button" value="Javascript" id="js_code" width="25px" />
-		<input type="button" value="python" id="py_code" width="25px"/>
+		<p class="form">Title:{{ form.title }}</p><br />
+		<input type="button" value="Javascript" id="js_code" /><br />
+		<input type="button" value="python" id="py_code" />
 		<p class="form">Text:</p>{{ form.text }}
 		<button type="submit" class="save">Save</button>
 	</form>
 
-	<script src="../../static/css/blog.js"></script>
+	<script src="http://www.leonkong.com/static/css/blog.js"></script>
 	{% include 'blog/upload.html' %}
 {% endblock %}
