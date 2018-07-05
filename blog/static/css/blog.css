@@ -275,6 +275,10 @@ textarea {
 		letter-spacing: 0.5pt;
 }
 
+.editor {
+    width: 80px;
+}
+
 .save {
     float: right;
     font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
