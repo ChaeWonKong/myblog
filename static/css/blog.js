@@ -1,8 +1,6 @@
 // Javascript for Blog
-window.onload = function() {
-	js_code.addEventListener('click', code.codeBlock('javascript'));
-	py_code.addEventListener('click', code.codeBlock('python'));
-};
+js_code.addEventListener('click', code.codeBlock('javascript'));
+py_code.addEventListener('click', code.codeBlock('python'));
 
 let code = {
 	"text": document.getElementById('id_text'),
