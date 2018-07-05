@@ -7,8 +7,8 @@
 		{% csrf_token %}
 		<p class="form">Category: {{ form.category }}</p>
 		<p class="form">Title:{{ form.title }}</p><br />
-		<input type="button" class="editor" onclick="code.codeBlock('javascript')" value="Javascript" class="editor" id="js_code" />
-		<input type="button" onclick="code.codeBlock('python')" value="python" id="py_code" />
+		<button type="submit" class="editor" onclick="code.codeBlock('javascript')" value="Javascript" class="editor" id="js_code" />
+		<button type="submit" onclick="code.codeBlock('python')" value="python" id="py_code" />
 		<p class="form">Text:</p>{{ form.text }}
 		<button type="submit" class="save">Save</button>
 	</form>
