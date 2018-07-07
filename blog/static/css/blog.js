@@ -20,4 +20,4 @@ var editor = {
 	"addBr": function() {
 		this.text.value += "<br />";
 	}
-}
+};
