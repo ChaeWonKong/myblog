@@ -30,3 +30,7 @@ const editor = {
 		this.text.value = this.text.value.replace(window.getSelection(), this.highlight);
 	}
 };
+
+function imgUpload() {
+	window.open('http://www.leonkong.com/post/upload/', '_blank', 'width: 550px, height: 150px');
+}
