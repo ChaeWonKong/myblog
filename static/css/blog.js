@@ -5,7 +5,7 @@ const editor = {
 	"codeBlock": function(lang) {
 		const cursorPos = this.text.selectionStart;
 		const beforeStr = this.text.value.substring(0, cursorPos);
-		const afterStr = this.text.value.substring(cursorpos, this.text.value.length);
+		const afterStr = this.text.value.substring(cursorPos, this.text.value.length);
 		this.text.value = 
 			beforeStr 
 			+ '<br /><pre><code class="' 
@@ -15,7 +15,7 @@ const editor = {
 	"addBr": function() {
 		const cursorPos = this.text.selectionStart;
 		const beforeStr = this.text.value.substring(0, cursorPos);
-		const afterStr = this.text.value.substring(cursorpos, this.text.value.length);
+		const afterStr = this.text.value.substring(cursorPos, this.text.value.length);
 		this.text.value = 
 			beforeStr
 			+ "<br />"
