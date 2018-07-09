@@ -31,7 +31,7 @@ const editor = {
 	}
 };
 
-const upload{
+const upload = {
 	"openUpload": function() {
 		window.open('http://www.leonkong.com/post/upload/', '_blank', 'width=550px, height=150px');
 	},
