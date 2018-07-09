@@ -24,5 +24,9 @@ const editor = {
 	"makeBolder": function() {
 		this.highlight = '<b>' + this.highlight + '</b>';
 		this.text.value = this.text.value.replace(window.getSelection(), this.highlight);
+	}, 
+	"makeUnderLine": function() {
+		this.highlight = '<u>' + this.highlight + '</u>';
+		this.text.value = this.text.value.replace(window.getSelection(), this.highlight);
 	}
 };
