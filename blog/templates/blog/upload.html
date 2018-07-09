@@ -3,7 +3,7 @@
     {% csrf_token %}
 
     {{ imgform }}
-
+	<button type="button" onclick="upload.closeUpload()">cancel</button>
     <button type="submit">Upload</button>
 </form>
 {% if src %}
