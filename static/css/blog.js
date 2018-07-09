@@ -32,5 +32,5 @@ const editor = {
 };
 
 function imgUpload() {
-	window.open('http://www.leonkong.com/post/upload/', '_blank', 'width: 550px, height: 150px');
+	window.open('http://www.leonkong.com/post/upload/', '_blank', 'width=550px, height=150px');
 }
