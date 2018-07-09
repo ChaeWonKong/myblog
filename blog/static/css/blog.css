@@ -282,7 +282,13 @@ textarea {
 .save {
     float: right;
     font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
-    letter-spacing: 1pt;
+    letter-spacing: 0.5pt;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-size: 1.5vw;
 }
 
