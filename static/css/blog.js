@@ -9,7 +9,7 @@ const editor = {
 		this.text.value += "<br />";
 	},
 	"makeBolder": function() {
-		this.highlight = '<b>' + highlight + '</b>';
+		this.highlight = '<b>' + this.highlight + '</b>';
 		this.text.value = this.text.value.replace(window.getSelection(), this.highlight);
 	}
 };
