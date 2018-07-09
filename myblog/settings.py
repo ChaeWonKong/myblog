@@ -135,7 +135,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Media files(uploaded images, videos)
 MEDIA_URL = '/media/'
-if not os.path.exists(os.path.join(os.path.join(Base_dir, 'static/'), 'media/')):
+if not os.path.exists(os.path.join(os.path.join(BASE_DIR, 'static/'), 'media/')):
     os.mkdir(os.path.join(os.path.join(BASE_DIR,'static/'), 'media/'))
 MEDIA_ROOT = os.path.join(os.path.join(BASE_DIR,'static/'), 'media/')
 
