@@ -2,7 +2,7 @@
 const editor = {
 	"text": document.getElementById('id_text'),
 	"highlight": window.getSelection(),
-	"path": "",
+	"path": " ",
 	"codeBlock": function(lang) {
 		const cursorPos = this.text.selectionStart;
 		const beforeStr = this.text.value.substring(0, cursorPos);
@@ -50,7 +50,10 @@ const editor = {
 const upload = {
 	"getPath": function() {
 		if (document.getElementById('img_src')){
-			editor.path = document.getElementById('img_src');
+			const path = document.getElementById('img_src');
+			path.select();
+			document.execCommand('copy');
+			alert(path.value+ " copied");
 		}
 	},
 	"openUpload": function() {
