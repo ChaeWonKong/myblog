@@ -2,7 +2,7 @@
 const editor = {
 	"text": document.getElementById('id_text'),
 	"highlight": window.getSelection(),
-	"path": ""
+	"path": "",
 	"codeBlock": function(lang) {
 		const cursorPos = this.text.selectionStart;
 		const beforeStr = this.text.value.substring(0, cursorPos);
