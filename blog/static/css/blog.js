@@ -51,8 +51,7 @@ const upload = {
 	"getPath": function() {
 		if (document.getElementById('img_src')){
 			const path = document.getElementById('img_src');
-			path.select();
-			document.execCommand('copy');
+			document.execCommand('copy', false, path);
 			alert(path.value+ " copied");
 		}
 	},
