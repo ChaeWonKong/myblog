@@ -39,7 +39,7 @@ const editor = {
 				beforeStr
 				+ '<img src="http://leonkong.com/static'
 				+ this.path
-				+ '" style="max-width: 500px" />''
+				+ '" style="max-width: 500px" />'
 				+ afterStr;
 		} else {
 			alert('Oops! Upload First!');
